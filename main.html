@@ -1,16 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Semantic Navbar and Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
 
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    video {
+      width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      background-color: black;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+  <h2>3 random videos</h2>
+  <section class="video-container">
+    <video controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
 </body>
-
 </html>
